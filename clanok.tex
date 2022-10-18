@@ -50,19 +50,22 @@ Záverečné poznámky prináša časť~\ref{zaver}.
 
 
 
-\section{História umelej inteligencie vo videohrách} \label{kapitola1}
+\section{História umelej inteligencie vo videohrách} \label{kapitola2}
 Pod pojmom umelá inteligencia si predstavme skupinu algoritmov ktorá má zapôsobiť na človeka ako ďalší inteligentný človek.
 
-\subsection{Prvé použitia umelej inteligencie vo videohrách} \label{kapitola1.1}
+\subsection{Prvé použitia umelej inteligencie vo videohrách} \label{kapitola2.1}
 Umelá inteligencia ako zadefinová v predošlej kapitole bola prvýkrát použitá vo videohre Nim, kde bolo za úlohu poraziť počítač, resp. umelú inteligenciu tým, že na základe herného módu ste nemohli alebo mohli byť posledný na rade, kto odstráňi zápalku alebo zápalky z herného poľa. Pravidlo hry bolo, že ten kto bol na rade, si mohol vybrať, či zoberie z herného poľa len jednu zápalku alebo viac, ale ak sa rozhodol pre viac, tak mohol zápalky brať len z toho radu kde sa nachádza jeho zvoľená prvá zápalka. Kvôli tomuto pravidlu bolo možné vytvoriť algoritmus pre umelú inteligenciu ktorá hrala proti hráčovi a postupne, ako hra prebiehala, umelá inteligencia prepočítavala následujúce možnosti na základe algoritmu a vyberala taký počet zápaliek, čo ju postupne približovalo k výhre.
 
-\subsection{Videohry pred rokom 2000 používajúce umelú inteligenciu} \label{kapitola1.2}
+\subsection{Videohry pred rokom 2000 používajúce umelú inteligenciu} \label{kapitola2.2}
 Videohry sa začali vytvárať až po druhej svetovej vojne a počas studenej vojny pretože tieto udalosti pomohli vývoju výpočtovej techniky čo znamenalo, že viacej a viacej ľudí sa podielalo na tomto vývoje nakoľko počítače a výpočtová technika boli doteraz používané prevažne len v druhej svetovej vojne. . V roku 1980 bola vytvorená hra Pac-Man ktorá mala zakomponovanú už o niečo komplikovanejšiu umelú inteligenciu ako videohra Nim, ale stále to boli len jednoduché algoritmy ako sa má umelá inteligencia správať. Vo videohre Pac-Man ale na rozdiel od hry Nim bola umelá inteligencia použitá 4 krát vo forme duchov, ktorý počas hry prenásledujú hráča na základe 4 rozdielnych algoritmov.
 Červený duch prenásleduje hráča priamo, nerozmýšla nad tým akými možnými cestami môže hráč utiecť, jednoducho tento duch hľadá najkratšiu cestu k hráčovi a ide po nej.
 Ružový duch sa odlišuje od prvého v tom, že nehľadá najkratšiu cestu k hráčovi, ale pred hráča.
 Modrý duch má spomedzi ostatných duchov najkomplikovanjší algoritmus a to preto, pretože ako jedinný neberie do úvahy len hráčovu pozíciu, ale aj pozíciu červeného ducha. Ak je hráč ďaleko od červeného ducha tak algoritmus modrého ducha nemá dostatočne presné informácie a často sa modrý duch nachádza ďaleko od hráča. Ako prvé sa zoberie pozícia pred hráčom, rovnako ako pri ružovom duchovi, ďalej sa výtvorí úsečka medzi týmto bodom a červeným duchom, ktorá sa otočí o 180 stupňov a ten bod, ktorý bol na červenom duchovi je teraz cieľ modrého ducha.
 Oranžový duch sa správa tak, že ak je viacej ako osem políčok ďaleko od hráča, tak sa správa ako červený duch, ale ak je dostatočne blízko, tak mení svoj algoritmus a ide najkratšou možnou cestou do dolného ľavého rohu. Medzi týmito dvoma algoritmami neustálne prepína.
 (Záverny paragraf pre Pac-Man)
+
+\subsection{Umelá inteligencia v moderných videohrách} \label{kapitola2.3}
+Neskôr, o 34 rokov vývoja umelej inteligencie vyšla hra s názvom Alien Isolation ktorej cieľom je zistiť, prečo sa vesmírna stanica Sevastopol prestala ozývať. Hráč zistí, že to je kvôli tomu, že na vesmírnej stanici sa nachádzajú votrelci ktorý postupne zabíjajú posádku stanice. Týchto votrelcov riadia dve umelé inteligencie čo už bolo použité aj v hre Left 4 Dead. Tieto dve umelé inteligencie vo videohre Alien Isolation sú rozdelené tak, že jedna neustále vie kde sa hráč nachádza ale tá druhá o tom nevie. Cieľom tej prvej inteligencie je navádzať tú druhú tak, aby vedela na čo sa má sústrediť. Tiež má aj meradlo, čím meria intenzitu stresu ktorú pravdepodobne hráč prežíva, tým, že vidí votrelca alebo je v jeho blízkosti a ak sa toto meradlo naplní, tak prvá umelá inteligencia prikazuje tej druhej aby išla preč od hráča. Ako bolo spomenuté, druhá umelá inteligencia votrelca nikdy nevie presne kde sa hráč nachádza, len na základe poskytnutých informácií prvou umelou inteligenciou postupuje podľa naprogramovaného stromového grafu v ktorom sa nachádza cez 100 možností. Niektoré tieto možnosti sa ale odomknú až po dosiahnutí určitých lokácií kvôli tomu, aby sa votrelec po danom čase hrania nezdal opakujúci.
 
 \begin{figure*}[tbh]
 \centering
