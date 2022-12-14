@@ -79,15 +79,24 @@ Umelá inteligencia vo videohrách bola prvý krát použítá vo videohre Nim, 
 \end{figure}
 
 \subsection{Videohry pred rokom 2000 používajúce umelú inteligenciu} \label{kapitola2.2}
-Videohry sa začali vytvárať až po druhej svetovej vojne a počas studenej vojny pretože tieto udalosti pomohli vývoju výpočtovej techniky čo znamenalo, že viacej a viacej ľudí malo prístup k týmto technológiam čiže vývoj výpočtovej techniky sa začal zväčšovať exponenciálne. V roku 1980 bola vytvorená hra Pac-Man ktorá mala zakomponovanú už o niečo komplikovanejšiu umelú inteligenciu ako videohra Nim, ale stále to boli len jednoduché algoritmy. Vo videohre Pac-Man ale na rozdiel od hry Nim bola umelá inteligencia použitá 4 krát vo forme duchov, ktorý počas hry prenásledujú hráča na základe 4 rozdielnych algoritmov. \cite{PacmanAI}
+Videohry sa začali vytvárať až po druhej svetovej vojne a počas studenej vojny pretože tieto udalosti pomohli vývoju výpočtovej techniky čo znamenalo, že viacej a viacej ľudí malo prístup k týmto technológiam čiže vývoj výpočtovej techniky sa začal zväčšovať exponenciálne. V roku 1980 bola vytvorená hra Pac-Man ktorá mala zakomponovanú už o niečo komplikovanejšiu umelú inteligenciu ako videohra Nim, ale stále to boli len jednoduché algoritmy. Vo videohre Pac-Man ale na rozdiel od hry Nim bola umelá inteligencia použitá 4 krát vo forme duchov ktorý počas hry prenásledujú hráča na základe 4 rozdielnych algoritmov. \cite{PacmanAI}
 
-Červený duch prenásleduje hráča priamo, nerozmýšla nad tým akými možnými cestami môže hráč utiecť.
+Červený duch prenásleduje hráča priamo, neuvažuje nad tým, akými možnými cestami môže hráč utiecť.
 
-Ružový duch sa správa veľmi podobne ako červený duch, ale odlišuje sa od prvého v tom, že nehľadá najkratšiu cestu k hráčovi, ale pred hráča.
+Ružový duch funguje veľmi podobne ako červený duch, ale odlišuje sa od prvého v tom, že nehľadá najkratšiu cestu k hráčovi, ale pred hráča.
 
-Modrý duch má spomedzi ostatných duchov najkomplikovanjší algoritmus a to preto, pretože ako jedinný neberie do úvahy len hráčovu pozíciu, ale aj pozíciu červeného ducha. Ak je hráč ďaleko od červeného ducha tak algoritmus modrého ducha nemá dostatočne presné informácie a často sa modrý duch nachádza ďaleko od hráča. Modrý duch sa správa tak, že ako prvé sa zoberie pozícia pred hráčom, rovnako ako pri ružovom duchovi, ďalej sa výtvorí úsečka medzi týmto bodom a červeným duchom, ktorá sa otočí o 180 stupňov doprava a ten bod, ktorý bol na červenom duchovi je teraz cieľ modrého ducha, takže najkratšou možnou cestou sa k tomuto bodu snaží dostať a tento proces sa neustále vykonáva aby sa nestalo, že modrý duch dorazí na svoj cieľ a hráč už je ďaleko od tohto bodu.
+Modrý duch sa správa tak, že ako prvé sa zoberie pozícia pred hráčom, rovnako ako pri ružovom duchovi, ďalej sa výtvorí úsečka medzi týmto bodom a červeným duchom. Úsečka sa otočí o 180 stupňov doprava a bod, ktorý bol na červenom duchovi je teraz cieľ modrého ducha, takže najkratšou možnou cestou sa k tomuto bodu snaží dostať a tento proces sa neustále vykonáva pre čo najväčšiu presnosť.
 
-Oranžový duch sa správa tak, že ak je viacej ako osem políčok ďaleko od hráča, tak sa správa ako červený duch, ale ak je dostatočne blízko, tak mení svoj algoritmus a ide najkratšou možnou cestou do dolného ľavého rohu. Medzi týmito dvoma algoritmami neustálne prepína čím pôsobí na hráča nepredvídateľne čo je aj jeho úlohou, aby hráč spravil chybu a jeden z ďalších troch duchov ho chytil.
+Oranžový duch funguje tak, že ak je viacej ako osem políčok ďaleko od hráča, tak funguje ako červený duch, ale ak je dostatočne blízko, tak mení svoj algoritmus a ide najkratšou možnou cestou do dolného ľavého rohu. Medzi týmito dvoma algoritmami neustálne prepína čím pôsobí na hráča nepredvídateľne čo je aj jeho úlohou, aby hráč spravil chybu a jeden z ďalších troch duchov ho chytil.
+\begin{figure}[tbh]
+	\centering
+	\includegraphics[scale=0.2]{redGhost.png}
+	\includegraphics[scale=0.2]{pinkGhost.png}
+	\includegraphics[scale=0.2]{blueGhost.png}
+	\includegraphics[scale=0.2]{orangeGhost.png}
+	\caption{Pac-Man Duchovia}
+	\label{obr3}
+\end{figure}
 
 \subsection{Umelá inteligencia v moderných videohrách} \label{kapitola2.3}
 O 34 rokov vývoja umelej inteligencie neskôr, vyšla hra s názvom Alien Isolation v ktorej je umelá inteligencia zakomponovaná do nepriateľov, nazývaných votrelci. Týchto votrelcov riadia dve umelé inteligencie. \cite{AlienIsolationAI} Sú rozdelené tak, že jedna neustále vie, kde sa hráč nachádza ale tá druhá o tom nevie. Cieľom tej prvej inteligencie je navádzať tú druhú tak, aby vedela na čo sa má sústrediť, napríklad keď votrelec naposledy videl hráča utiecť do miestnosti, kde sa dá schovať do rôznych objektov, tak tá inteligencia, ktorá vie kde sa nachádza hráč povie tej druhej, nech skontroluje tieto objekty. Pomimo umelej inteligencie má tento votrelec v sebe zakomponované aj meradlo, čím meria intenzitu stresu ktorú hráč prežíva, tým, že vidí votrelca alebo je v jeho blízkosti a ak sa toto meradlo naplní, tak prvá inteligencia prikazuje tej druhej, aby išla preč od hráča čím si hráč môže nachvíľu oddychnúť. Toto striedanie medzi útekom od votrelca a schovávaním pred ním udržuje hráča hrať túto hru a neodradí ho po prvej hodine alebo dvoch hrania. Ako bolo spomenuté, druhá umelá inteligencia votrelca nikdy nevie presne kde sa hráč nachádza, len na základe poskytnutých informácií prvou umelou inteligenciou postupuje podľa naprogramovaného stromového grafu v ktorom sa nachádza cez 100 možností na výber. Niektoré tieto možnosti sa ale odomknú až po dosiahnutí určitých úrovní kvôli tomu, aby sa votrelec po danom čase hrania nezdal opakujúci.
