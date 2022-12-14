@@ -114,12 +114,27 @@ Druhá umelá inteligencia votrelca nikdy nevie presne kde sa hráč nachádza a
 Umelá inteligencia sú v podstate algoritmy, ktoré sa snažia napodobniť to, ako sa má daná inteligentná forma života správať. Najčastejšie používané algoritmy v umelej inteligencii vo videohrách je algoritmus hľadania cesty a algoritmus rozhodovania sa.
 
 \subsection{Algoritmus hľadania cesty} \label{kapitola3.1}
-Z anglického slova “path finding”, tento algoritmus je jeden z najpoužívanejších v moderných videohrách pretože je veľmi flexibilný, čo vývojári hier veľmi obľubujú. Jeho cieľom je nájsť najkratšiu cestu z bodu A do bodu B. 
+Z anglického slova “path finding”, tento algoritmus je jeden z najpoužívanejších v moderných videohrách pretože je veľmi flexibilný, čo vývojári hier veľmi obľubujú. Jeho cieľom je nájsť najkratšiu cestu z bodu A do bodu B. Algoritmus hľadania cesty môže byť realizovaný pomocou prehľadávania grafu do dĺžky alebo šírky, Dijkstrovej metódy alebo algoritmu A*. V moderných videohrách je najčastejšie implementovaný algoritmus A* pretože spomedzi uvedených možností, je najefektívnejší pri hľadaní cesty z bodu A do bodu B. 
+\begin{figure}[tbh]
+	\centering
+	\includegraphics[scale=0.5]{Aalgo.png}
+	\caption{Algoritmus hľadania cesty}
+	\label{obr5}
+\end{figure}
 
 \subsection{Algoritmus rozhodovania sa} \label{kapitola3.2}
-Tento algoritmus určuje, čo a na základe akých okolností vykoná umelá inteligencia. Vstupom sú dáta z okolia, kde sa umelá inteligencia nachádza a z týchto vstupov usudzuje, čo má spraviť ďalej. Ako taký príklad môže byť, že hráč strieľa po umelej inteligencii ktorá na základe tohto vstupu, sa rozhodne, že sa skryje za najbližšiu prekážku a začne opätovať streľbu.
-
-
+Tento algoritmus určuje, čo a na základe akých okolností vykoná umelá inteligencia. Vstupom sú dáta z okolia, kde sa umelá inteligencia nachádza a z týchto vstupov usudzuje, čo má spraviť ďalej. Ako taký príklad môže byť, že hráč strieľa po umelej inteligencii ktorá na základe tohto vstupu, sa rozhodne, že sa skryje za najbližšiu prekážku. Podobne ako pri algoritme hľadania cesty, algoritmus rozhodovania môže byť realizovaný pomocou FSM (konečný automat), HFSM (hierarchický konečný automat) alebo pomocou stromového diagramu.
+\begin{figure}[tbh]
+	\centering
+	\includegraphics[scale=0.24]{fsm.png}
+	\includegraphics[scale=0.5]{treeDiag.png}
+	\includegraphics[scale=0.4]{hfsm.png}
+	\caption{Algoritmus rozhodovania sa (FSM, HFSM, Stromový diagram)}
+	\label{obr6}
+\end{figure}
+\\\\
+\\\\
+\\\\
 \section{Typy umelej inteligencie} \label{kapitola4}
 Umelá inteligencia vo videohrách v porovnaní s tou v iných odvetiach sa odlišuje v tom, že tá v hrách je vytvorená väčšinou tak, aby napodobňovala inú inteligentnú formu života. Kvôli tomuto nikdy nedosiahne svôj úplný potenciál a je nútená v mnohých prípadoch byť porazená hráčom. Napríklad v spomenutej hre Pac-Man \ref{kapitola2.2}, každý duch má špeciálne vytvorenú umelú inteligenciu tak, aby hráč mal šancu vyhrať danú úroveň a kvôli tomuto je táto hra zábavná. Umelá inteligencia mimo hier, ktorými sú napríklad virtuálny asistent Alexa alebo Google Assistant ktorého nájdeme v dnešnej dobe v mnohých moderných zariadeniach ako sú naše smartfóny alebo tablety ale aj smart televízie, používajú strojové učenie (Machine Learning) čo je vlastne podkategóriou umelej inteligencie a pomáha jej zlepšovať sa v ich práci bez vypisovania veľkého počtu riadkov inštrukcií. Táto vlastnosť je veľmi dôležitá a užitočná, pretože týto asistenti nepracujú s presne vytýčenými vstupmi pretože každý človek je iný, napríklad človek 1 povie virtuálnemu asistentovi aby mu nastavil upozornenie na zasadnutie inak ako by to povedal človek 2, buď sa odlišujú v nárečí, použitím slov alebo rôznymi inými spôsobmi. Jednoducho, umelá inteligencia v hrách sa najčastejšie riadi podľa presne vytýčených algoritmov pretože počet vstupov, ktoré hráč môže zadať je limitovaný na rozdiel od tej využívanej mimo hier, ktorá tiež používa nejaké algoritmy ale hlavným rozdielom je použitie strojového učenia, skoro neobmedzeného množstva vstupov a umožnenie dovŕšenia úplného potenciálu, nakoľko nie je limitovaná imitáciou nejakej inteligentnej formy života ako vo videohrách.
 
